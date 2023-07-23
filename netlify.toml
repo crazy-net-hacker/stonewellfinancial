@@ -1,0 +1,17 @@
+[build]
+  command = "npm run build" # Specify the build command for your project
+  publish = "build" # Specify the publish directory for your built files
+
+[build.environment]
+ NODE_VERSION = "14.17.1" # Specify the Node.js version to use during the build process
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*" # Set custom headers if needed    Access-Control-Allow-Origin = "*" # Set custom headers if needed

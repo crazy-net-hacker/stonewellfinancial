@@ -1,0 +1,194 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'heebo';
+  font-style: normal;
+  font-weight: 300;
+  src: local('※'),
+  url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap'),
+  url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap') format('embedded-opentype')
+  url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap') format('woff'),
+  url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap') format('opentype'),
+  url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap') format('truetype');
+  unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
+}
+:root {
+  --mainBlue: #408db1;
+  --fontGrey: #696969;
+  --mainGrey: #e0e0e0;
+  --mainBlack: #2c2c2c;
+  --mainWhite: #f3f3f3;
+}
+html {
+  scroll-behavior: smooth;
+  /* font-family: 'Montserrat', 'GmarketSansLight', sans-serif; */
+  /* font-family: '"Muli", "Helvetica", "Arial", sans-serif' */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Montserrat', 'GmarketSansLight', sans-serif; */
+  /* font-family: '"Muli", "Helvetica", "Arial", sans-serif'; */
+  /* font-family: 'Nanum Gothic', sans-serif; */
+  /* color: var(--mainBlack) !important; */
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  background-color: rgb(255, 255, 255) !important;
+}
+/* Header carousel in main page*/
+.slick-prev:before,
+.slick-next:before {
+  color: rgba(51, 51, 51, 0.6) !important;
+}
+.carousel-header .slick-next:before,
+.carousel-header .slick-prev:before {
+  font-size: 30px !important;
+}
+.carousel-header .slick-next {
+  right: 30px;
+  z-index: 1;
+}
+.carousel-header .slick-prev {
+  left: 25px;
+  z-index: 1;
+}
+.carousel-header .slick-dots {
+  bottom: 10px !important;
+}
+@media screen and (max-width: 960px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+}
+
+.bg-grey {
+  background-color: #dae4e8;
+  /* padding-top: 1rem;
+  padding-bottom: 1rem; */
+}
+/* section */
+.section-wrapper {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* section title */
+.section-title {
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-end;
+}
+.section-title-text {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+/* image card in section */
+
+.section-title-link {
+  font-size: 15px;
+}
+/* override compare image card */
+.label__text {
+  font-size: 0.8rem !important;
+}
+
+/* scroll Top Button */
+.scrollTop {
+  position: fixed;
+  width: 180%;
+  bottom: 20px;
+  right: 20px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  .scrollTop {
+  bottom: 5px;
+  right: 5px;
+  }
+}
+
+.scrollTop:hover {
+  opacity: 1;
+
+}
+
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+/* Add nbsp before links */
+section::before {
+  /* //margin-top: 100px; */
+  content: '\00a0';
+  font-size: 60px;
+  /* display: hidden; */
+  /* color: transparent; */
+  /* padding-top: 250px; */
+}
+.btnPurple {
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-align: center;
+  background-color: #383e96;
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+
+  /* transition: box-shadow 0.3s; */
+}
+.btnPurple:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #262c83;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.21) !important;
+}
+.btnWhite {
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-align: center;
+  background-color: #dbdbdb;
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+
+  /* transition: box-shadow 0.3s; */
+}
+.btnWhite:hover {
+  text-decoration: none;
+  color: black;
+  background-color: #d3d3d3;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.21) !important;
+}
