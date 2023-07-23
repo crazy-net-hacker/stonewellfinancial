@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "prepare-server": "npm install",
+    "heroku-postbuild": "npm run prepare-server",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "14.x.x",
+    "npm": "6.x.x"
+  },
+  "author": "Emma Jaesoon Lee",
+  "private": true,
+  "dependencies": {
+    "aws-sdk": "^2.1031.0",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dialogflow": "^1.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "got": "^9.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment-timezone": "^0.5.34",
+    "multer": "^1.4.3",
+    "node-fetch": "^2.6.1",
+    "node-schedule": "^2.1.1",
+    "nodemailer": "^6.6.1",
+    "nodemon": "^2.0.4",
+    "pg": "^8.3.3",
+    "react-google-recaptcha": "^2.1.0",
+    "zcrmsdk": "0.0.20"
+  }
+}
